@@ -1,0 +1,22 @@
+lưu ý : return chỉ đặt trong hàm  ( function)
+	  các biến khác phải khai báo trc khi return ( như ở vd dưới result cx dc khai báo)
+vd :
+
+function testif() {
+  let result;
+  var x = 5;
+  
+  if (x > 1) {
+    result = "x lớn hơn 1";
+  } else {
+    result = "x nhỏ hơn hoặc bằng 1";
+  }
+  
+  return result; // Trả về kết quả
+}
+
+// Gọi hàm và in ra kết quả
+console.log(testif());
+
+
+ở bài này khai báo result bằng let vì sau khi dc khai báo ở trên thì biết return ở dưới mới gọi dc không như var vì nó lỏng lẻo nó sẽ chạy lên đầu

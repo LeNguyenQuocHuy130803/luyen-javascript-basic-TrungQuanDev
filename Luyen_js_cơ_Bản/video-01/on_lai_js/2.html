@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ôn  lạilại</title>
+</head>
+<body>
+    <h1 id="001"> Ôn lại những gì đã học</h1>
+
+    <button type="button"  onclick="onlai() "> thay đổi nội dung Ôn lại</button>
+    <!-- ////////////////////////////////////////////////////////// -->
+
+    <img id="002" src="../img/bulb-off.png" alt="bóng-đèn-đang-tắt" width="100" height="100">
+
+    <button type="button" onclick="BongDen('on')" >turn on light</button>
+    <button type="button" onclick="BongDen('off')" >turn off light</button>
+</body>
+<script>
+    const onlai = () => {
+        document.getElementById('001').style.color = "red";
+        document.getElementById('001').style.backgroundColor = "pink";
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////
+
+    const BongDen = (action) => {
+        console.log(action);     
+        let imgBongDen = "img/bulb-off.png";
+        if ( action === 'on') {
+            imgBongDen= 'img/bulb-on.png'
+        } 
+        document.getElementById('002').src = imgBongDen;
+    }  
+    
+</script>
+</html>

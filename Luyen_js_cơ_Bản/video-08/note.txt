@@ -1,0 +1,71 @@
+các các cách viết function như sau :
+
+//1. function declaration (khai báo hàm) không có tham số, dạng :   ********************************************
+
+function "Tên hàm" () {
+    log
+}
+"Tên hàm" ()
+///////////////////////////////////////////////////////////////////////////////
+
+//2. function declaration (khai báo hàm)  có tham số, dạng :
+
+function "Tên hàm" ("tham số tự đặt tên:name") {
+    log
+}
+"Tên hàm" ("truyền tham số vào : huy")
+///////////////////////////////////////////////////////////////////////////////
+
+//3. function expression ( hàm biểu thức) , dạng có tham số , dạng không có tham số tương tự như trên:
+
+const "Tên hàm" = function ("tham số tự đặt tên:name") {
+    log
+}
+"Tên hàm" ("truyền tham số vào : huy")
+///////////////////////////////////////////////////////////////////////////////
+
+// 4. // arrow function (hàm mũi tên)
+
+const sayhello = (name) => {
+    console.log(`hello ${name}! I am huyle `);
+}
+sayhello("Sang");
+///////////////////////////////////////////////////////////////////////////////////////
+
+// 5. // anonymous function (hàm ẩn danh) 
+
+setTimeout( () =>{ // delay 1 đoạn code nào đó trước khi ta chạy
+    console.log("Sau 3s thì xuất hiện");
+},3000) 
+
+// //6. method function (hàm phương thức) : hàm dc định nghĩa hoặc khai báo bên trong 1 object
+
+let develop = { //  gọi là object
+    name: "lê huy",
+    age: 22,
+    hobbies: ["coding", "eating"],
+    sayHello: function () { // thg sayHello chính là 1 method function vì nó đươc khai báo bên trong 1 object
+        console.log(`Hello, I am ${this.name} the age is ${this.age} and I like ${this.hobbies}`); //cách 2: đây là cách log bằng pphap literal
+    },
+    
+    sayHelloArrFn : () => { // dùng methon dạg arrow function
+        console.log(`Hello, I am ${this.name} the age is ${this.age} and I like ${this.hobbies}`); // arrow function khồn được dùng this ( ở đây dòng này nó sẽ hoeejn Undefined)
+    }
+}
+develop.sayHello();
+develop.sayHelloArrFn();
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 7. constructor function ( hảm khởi tạo -hàm tạo) :sdung để tạo 1 đối tượng mới.
+function develop(username) {
+    this.username = username;
+    this.age = 22;
+    this.greet = () => {
+        console.log(`Hello! My name is ${this.username}`);
+    }
+}
+
+// tạo 1 biểu thức  , với từ khóa new ta có thể khởi tạo 1 hoặc nhiều đôi tượng
+
+const trungquandev = new develop("trungquan (real)");
+trungquandev.greet();

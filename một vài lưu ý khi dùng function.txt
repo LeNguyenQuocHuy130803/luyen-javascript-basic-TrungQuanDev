@@ -1,0 +1,13 @@
+1. dùng = { } khi cần khai báo nhiều thuộc tính và pthuc trong một đối tượng :
+
+const car = {  // đây gọi là object
+    brand: "Toyota",
+    model: "Corolla",
+    year: 2022,
+    start: function() {
+        console.log("Xe đã khởi động!");
+    }
+};
+
+console.log(car.brand); // "Toyota"
+car.start(); // "Xe đã khởi động!"

@@ -1,0 +1,11 @@
+nếu giá trị được đặt vô trong dấu " " hoặc dấu ' ' thì được gọi là kiểu dữ liệu string ( dạng chuỗi )
+trog js thì các kdl đấy dc chia vào 2 nhóm chính là : primitive type ( kdl dạng nguyên thủy : mumber , boolean, the null , undefined) và reference type ( kdl dạng tham chiếu : Objects, arrays, and functions ) - link để tham khảo khái niệm : https://www.oreilly.com/library/view/javascript-the-definitive/0596000480/ch04s04.html#:~:text=To%20answer%20this%20seemingly%20simple,and%20functions%20are%20reference%20types
+
+Phải nhớ kĩ rằng : các cái trong dấu '' hay " " là dạng chuỗi nếu đặt nó ở return hay console.log thì nó sẽ là in ra cái đó
+ví dụ :
+
+let number1 = 10;
+console.log('số thứ nhất:' , number1);  // nó sẽ in ra cái ở trong dấu ' '
+console.log('kiểu dữ liêu số thứ nhất:' , typeof number1);
+///////////////////////////////////// thì kết quả khi chạy ra sẽ là : số thứ nhất: 10
+                                                                      kiểu dữ liêu số thứ nhất: number
