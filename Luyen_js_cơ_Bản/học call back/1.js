@@ -9,7 +9,7 @@ function mycallback (param) {
       
   }
   mycallback(callback);
-  // cách thức hoạt động như sau khi ta run :  mycallback(callback); thì hàm callback dc truyền vào mycallback mà mycallback lại có tham số là param
+  // cách thức hoạt động như sau khi ta run :  mycallback(callback); thì hàm callback dc truyền vào mycallback mà mycallback lại có tham số là param ( đoạn code trên )
   // suy ra callback = param ( là 1 hàm), 
   // tiếp theo nó ktra câu lệnh if thì nos thấy callback đúng là 1 function nên nó sẽ gọi  param('học lập trìnhtrình') mà param = callback suy ra callback =  học lập trìnhtrình
   // tiếp theo nó thực hiện hàm callback ('học lập trìnhtrình) mà ở đây ta truyền đối số value suy ra value = học lập trìnhtrình, 
@@ -53,3 +53,10 @@ function program1 (callback) {
  // khi ta goji  program1(program2); maf trong program1 lại truyền vào callback suy ra program2 = callback
  // đến bước nó sét setTimeout sau 2 dây nó log ra chữ lấy tiền r thực hiện hàm callback mà callback lại bằng program2 nên:
  // nó sẽ gọi hàm program2 bên dưới ra và log ra rôi mua đồ
+
+
+// muado được truyền vào làm callback
+// Sau 1 giây, setTimeout chạy
+// In "lấy tiền" trước
+// Sau đó mới gọi callback() → tức là muado()
+// Cuối cùng in "rồi mua đồ"

@@ -14,8 +14,8 @@ let developer = {
 // console.log('---------------------------------------------------------');
 
 // ở dưới là dùng for in để lặp qua ( key ở đây là name , age, hobby...)
-for (let key in developer) { // trước chữ in dc đặt tên tự do
-    console.log( `${key} : ${developer[key]}`);   // có developer đêr ta truy cập vào chỗ của key đó , nó nằm trong developer
+for (let keyHuyle in developer) { // trước chữ in dc đặt tên tự do
+    console.log( `${keyHuyle} : ${developer[keyHuyle]}`);   // có developer đêr ta truy cập vào chỗ của key đó , nó nằm trong developer
 
     // hoặc nếu ta muốn lấy từng key thì có thể dùng cách như sau :
     // if (key === "name") {

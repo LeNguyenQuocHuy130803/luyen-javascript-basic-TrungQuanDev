@@ -4,11 +4,11 @@ let devlop = { // đối tượng A
     B: { // đối tượng B bên trong A
         name: "Đối tượng B",
         age: 20,
-        sayHello: function () {
+        sayHello () {
             console.log(`Xin chào từ ${this.name}, tuổi ${this.age}`);
         }
     },
-    introduce: function () {
+    introduce () {
         console.log(`Xin chào từ ${this.name}, tuổi ${this.age}`);
     }
 };
@@ -31,5 +31,6 @@ let developer = {
 };
 console.log(`${developer.name}`);
 console.log(`${developer.hobby}`); // literal nó sẽ chuyển đổi chuôiix log all về dạng string mặc dù đag ở đây là dạng mảng
+console.log(`Tên là : ${developer.name}`);
 
 

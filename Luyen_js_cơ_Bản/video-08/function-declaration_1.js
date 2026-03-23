@@ -1,7 +1,7 @@
 //  function declaration (khai báo hàm) : là cách khai báo phổ biến nhất trong js
 // phải có 2 bước 1 là khởi tạo , hai là gọi để chạychạy
 //  Bươc 1 : khởi tạo function 
-function sayhello () {  // function đến "tên functionfunction"
+function sayhello () {  // function đến "tên sayHello"
     console.log(`hello huy! `);
 }
 //  Bước 2 : gọi hàm để chạy function

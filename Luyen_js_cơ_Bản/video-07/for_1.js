@@ -16,4 +16,11 @@ console.log("-------------------------------------------------------------------
 // console.log(`Count: 3`);
 // console.log(`Count: 4`);
 // ...................
+for (i=0; i<=5 ; i++){
+    if (i == 5) {
+        console.log(`Count: ${i} đã dến 5`);
+    }else if (i == 4) {
+        console.log(`Count: ${i} - đây là số 4`);
+    }
+}
 

@@ -12,7 +12,7 @@ let develop = { //  gọi là object
     name: "lê huy",   // dạng key : value còn gọi là là thuộc tính ( property)
     age: 22,
     hobbies: ["coding", "eating"],
-    sayHello: function () {   // đang định nghĩa một method trong object develop ( đaang khai báo dạng anonymous function )
+    sayHello () {   // đang định nghĩa một method trong object develop ( đaang khai báo dạng anonymous function )
      // ở đây có thể ko cần viết hàm anonymous có thể viết bằng khai báo thông thường hoặc khai báo expresstion ( có tên khai báo )
      // sayHello() {}
      // hoặc sayyHello : function huylene (){}

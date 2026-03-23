@@ -1,9 +1,9 @@
 // hoisting: biến khai báo bằng let sẽ được hoisted (di chuyển lên đầu khối scope của nó,) 
 // nhuwng lại không được khởi tạo với giá trị mặc định ban đầu nào cả. nên không thể sử dụng
-// biến trước khi khai báo 
+// biến (ko thể console.log) trước khi khai báo 
 // console.log('nameLet:', nameLet);
 
-// khoong khai bao là sai 
+// khoong khai bao là sai : tức là nếu m mở dòng 7 ra nhưng chưa khai báo là dòng 7 nó báo sai không hdong được vì biến chưa được khai báo nên không thể sử dụng được
 // console.log('nameLet:', nameLet);
 // console.log("----------------------------------------------------------------");
 
